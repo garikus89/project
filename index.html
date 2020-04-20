@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="fonts/fa/css/all.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
@@ -16,7 +17,7 @@
             <span class="header__content_logo_h1">Notebook</span>
           </a>
           <div class="header__nav">
-            <a class="header__nav_item" href="#home">Home1</a>
+            <a class="header__nav_item" href="#home">Home</a>
             <a class="header__nav_item" href="#team">Team</a>
             <a class="header__nav_item" href="">Our story</a>
             <a class="header__nav_item" href="">Blog</a>
@@ -39,7 +40,7 @@
           >Revolutionary notebook with eco-friendly paper, advanced surface
           technology and digital sharing integration.
         </span>
-        <a class="best__item_button_text" href="">Order Now</a>
+        <button data-modal="order" class="best__item_button_text" href="">Order Now</button>
       </div>
     </div>
   </section>
@@ -92,10 +93,7 @@
             <span class="three_columns__block_one-text">3 Users</span>
             <span class="three_columns__block_one-text">100 Shares</span>
           </div>
-          <div class="three_columns_block_one-button">
-            <a class="three_columns__block_one-button-button three_columns__block_one-button-button-color" href="">Sign Up</a
-            >
-          </div>
+            <button data-modal="order" class="three_columns__block_one-button-button three_columns__block_one-button-button-color" href="">Sign Up</button>
         </div>
           <div class="three_columns_block_one">
             <div class="three_columns__block-second">
@@ -108,9 +106,7 @@
               <span class="three_columns__block_one-text">100 Users</span>
               <span class="three_columns__block_one-text">Unlimited Shares</span>
             </div>
-            <div class="three_columns_block_one-button">
-              <a class="three_columns__block_one-button-button three_columns__block_second-button-button" href="">Buy Now</a>
-            </div>
+              <button data-modal="order" class="three_columns__block_one-button-button three_columns__block_second-button-button" href="">Buy Now</button>
           </div>
             <div class="three_columns_block_one">
               <h2 class="three_columns_block_one-header three_columns_block_third-header-color">Enterprise</h2>
@@ -120,9 +116,7 @@
                 <span class="three_columns__block_one-text">Unlimited Users</span>
                 <span class="three_columns__block_one-text">Unlimited Shares</span>
               </div>
-              <div class="three_columns_block_one-button">
-                <a class="three_columns__block_one-button-button three_columns__block_third-button-button" href="">Buy Now</a>
-              </div>
+                <button data-modal="order" class="three_columns__block_one-button-button three_columns__block_third-button-button" href="">Buy Now</button>
             </div>
       </div>
       <div class="three_columns__footer">
@@ -143,24 +137,9 @@
     </div>
     <div class="container-form">
       <form>
-        <input
-          class="full_name"
-          type="text"
-          name="Full name"
-          placeholder="Full name"
-        />
-        <input
-          class="email"
-          type="email"
-          name="Email adress"
-          placeholder="Email adress"
-        />
-        <input
-          class="message"
-          type="text"
-          name="Message"
-          placeholder="Message"
-        />
+        <input class="full_name" type="text" name="Full name" placeholder="Full name"/>
+        <input class="email" type="email" name="Email adress" placeholder="Email adress"/>
+        <input class="message" type="text" name="Message" placeholder="Message"/>
         <input class="submit" type="submit" name="submit" placeholder="Send" />
       </form>
     </div>
@@ -190,4 +169,16 @@
       </div>
     </div>
   </footer>
+  <div class="overlay">
+    <div class="modal" id="consultation">
+      <div class="modal__close">&times;</div>
+      <div class="modal__subtitle">Заполните форму заявки</div>
+      <div class="modal__descr">и мы перезвоним вам в течение 10 минут</div>
+      <form class="buy">
+        <input class="full_name" type="text" name="Full name" placeholder="Ваше имя"/>
+        <input class="email" type="email" name="Email adress" placeholder="Ваша почта"/>
+        <button class="submit">Оформить</button> 
+      </form>
+    </div>
+  </div>
 </html>

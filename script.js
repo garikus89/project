@@ -12,6 +12,14 @@ window.addEventListener('DOMContentLoaded', () => {
     item.addEventListener('click', () => {
     hamburger.classList.toggle('hamburger_active');
     menu.classList.toggle('menu_active');
-        })
-    })
-})
+        });
+    });
+
+    $('[data-modal=order]').on('click', function(){
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function(){
+        $('.overlay, #consultation').fadeOut('slow');
+    });
+});
+

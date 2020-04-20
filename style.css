@@ -13,8 +13,10 @@ body{
     background-image: url(images/background_image_header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    
+    color: white; 
+}
+input{
+    appearance: none 
 }
 .Best{
     background-image: url(images/background_image_section.jpg);
@@ -93,6 +95,8 @@ h2{
     background-color: #a4b9be;
     border-radius: 3px;
     margin-top: 50px;
+    cursor: pointer;
+    border: none;
 }
 .text{
     height: 402px;
@@ -214,20 +218,16 @@ h2{
 .three_columns__block_one-text{
     margin: 20px 0 20px 0;
 }
-.three_columns_block_one-button{
-    height: 60px;
-    width: 290px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-}
 .three_columns__block_one-button-button{
     height: 60px;
     width: 290px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    border: none;
+    color: white;
+    margin-top: 10px;
 }
 .three_columns__block_one-button-button-color{
     background-color: #535a5e;
@@ -316,25 +316,25 @@ h2{
     border-radius: 4px;
   }
   .full_name:hover{
-    color: white;
-    border: 2px solid white;
+    color: black;
+    border: 2px solid black;
   }
   .email:hover{
-    color: white;
-    border: 2px solid white;
+    color: black;
+    border: 2px solid black;
   }
   .message:hover{
-    color: white;
-    border: 2px solid white;
+    color: black;
+    border: 2px solid black;
   }
   .full_name:hover::-webkit-input-placeholder{
-    color:white;
+    color:black;
   }
   .email:hover::-webkit-input-placeholder{
-    color:white;
+    color:black;
   }
   .message:hover::-webkit-input-placeholder{
-    color:white;
+    color:black;
   }
 .form__text-icons{
     display: flex;
@@ -370,6 +370,59 @@ h2{
     text-decoration: underline;
 }
 .hamburger{
+    display: none;
+}
+.buy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.submit{
+    cursor: pointer;
+}
+.overlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0, .5);
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    min-height: 300px;
+    background-color: white;
+    padding: 40px;
+}
+.modal__close{
+    position: absolute;
+    top: 0;
+    right: -40px;
+    font-size: 41px;
+    line-height: 21px;
+    color: red;
+    cursor: pointer;
+}
+.modal__subtitle{
+    color: black;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 42px;
+}
+.modal__descr{
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 30px;
+}
+#consultation{
     display: none;
 }
 @media (max-width: 767px){
