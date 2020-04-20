@@ -21,5 +21,9 @@ window.addEventListener('DOMContentLoaded', () => {
     $('.modal__close').on('click', function(){
         $('.overlay, #consultation').fadeOut('slow');
     });
+
+    //Mask
+
+    $('input[name=number]').mask("+7 (999) 999-99-99");
 });
 

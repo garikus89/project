@@ -381,6 +381,20 @@ h2{
 .submit{
     cursor: pointer;
 }
+.number{
+    width: 395px;
+    height: 58px;
+    margin-bottom: 20px;
+    background: transparent;
+    padding-left: 10px;
+}
+.number:hover{
+    color: black;
+    border: 2px solid black;
+}
+.number:hover::-webkit-input-placeholder{
+    color:black;
+  }
 .overlay{
     display: none;
     position: fixed;
