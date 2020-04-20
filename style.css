@@ -436,7 +436,10 @@ h2{
     text-align: center;
     line-height: 30px;
 }
-#consultation{
+.modal_mini{
+    min-height: 140px;
+}
+#consultation, #thanks{
     display: none;
 }
 @media (max-width: 767px){
